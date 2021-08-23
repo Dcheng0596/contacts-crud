@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.container {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-header {
+  display: flex;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 21px 0px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+span {
+  margin-left: 20px;
+  margin-right: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-list, .email-item, input {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px !important;
+  line-height: 38px;
+  margin: 0px;
+
+  color: #444444;
+}
+
+.contacts {
+  height: 100vh;
+  background: #F8FAFF;
+  min-width: 250px;
+}
+
+input {
+  background: #F8FAFF !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contact-list li:hover {
+  background-color: #579AFF;
+}
+
+.delete {
+  visibility: hidden;
+}
+
+.fullname{
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.add-email {
+  color: #579AFF;
+  white-space: nowrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.email-input {
+  visibility: hidden;
+  height: 25px !important;
+  width: 200px;
 }
+
+.email-bar {
+  display: flex;
+  height: 25px;
+}
+
+button {
+  width: 150px ;
+}
+
